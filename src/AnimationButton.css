@@ -1,0 +1,160 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    gap: 20px; 
+  }
+  /* Flex container for select and span */
+.flex-container {
+    display: flex;
+    align-items: center;
+    
+    gap: 1rem; /* Adjust the gap between elements */
+  }
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db; /* Set your preferred background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #2980b9; /* Change the background color on hover */
+  }
+
+@keyframes pulseAnimation {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+  @keyframes bounceAnimation {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .animate-pulse {
+    animation: pulseAnimation 1s infinite;
+  }
+  
+  .animate-bounce {
+    animation: bounceAnimation 0.5s infinite;
+  }
+  .animated-text {
+    display: inline-block;
+  }
+
+  /* Animation flash */
+
+@keyframes flashAnimation {
+    0%, 50%, 100% {
+      opacity: 1;
+    }
+    25%, 75% {
+      opacity: 0;
+    }
+  }
+  
+  .animate-flash {
+    animation: flashAnimation 1s infinite;
+  }
+/* Animation spin */
+
+@keyframes spinAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animate-spin {
+    animation: spinAnimation 2s linear infinite;
+  }
+    
+  @keyframes wobbleAnimation {
+    0% { transform: none; }
+    15% { transform: translateX(-25%) rotate(-5deg); }
+    30% { transform: translateX(20%) rotate(3deg); }
+    45% { transform: translateX(-15%) rotate(-3deg); }
+    60% { transform: translateX(10%) rotate(2deg); }
+    75% { transform: translateX(-5%) rotate(-1deg); }
+    100% { transform: none; }
+  }
+  
+  .animate-wobble {
+    animation: wobbleAnimation 1s infinite;
+  }
+  @keyframes swingAnimation {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(15deg); }
+    20% { transform: rotate(-10deg); }
+    30% { transform: rotate(5deg); }
+    40% { transform: rotate(-5deg); }
+    50% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  .animate-swing {
+    animation: swingAnimation 2s infinite;
+  }
+  @keyframes shakeAnimation {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+  }
+  
+  .animate-shake {
+    animation: shakeAnimation 0.5s infinite;
+  }
+  @keyframes zoomInAnimation {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .animate-zoomIn {
+    animation: zoomInAnimation 1s forwards;
+  }
+  @keyframes zoomOutAnimation {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0);
+    }
+  }
+  
+  .animate-zoomOut {
+    animation: zoomOutAnimation 1s forwards;
+  }
+  @keyframes slideInLeftAnimation {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-slideInLeft {
+    animation: slideInLeftAnimation 1s forwards;
+  }
+            
